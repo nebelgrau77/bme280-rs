@@ -64,7 +64,8 @@
 
 use core::marker::PhantomData;
 use embedded_hal::blocking::delay::DelayMs;
-use embedded_hal::blocking::i2c::{Read, Write, WriteRead};
+//use embedded_hal::blocking::i2c::{Read, Write, WriteRead};
+use embedded_hal::blocking::i2c::{Write, WriteRead}; //Read trait removed
 
 #[cfg(feature = "serde")]
 use serde::Serialize;
